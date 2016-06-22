@@ -12,6 +12,9 @@
 		1B108FC91D195778009A8AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B108FC71D195778009A8AB0 /* Main.storyboard */; };
 		1B108FCB1D195778009A8AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B108FCA1D195778009A8AB0 /* Assets.xcassets */; };
 		1B108FCE1D195778009A8AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B108FCC1D195778009A8AB0 /* LaunchScreen.storyboard */; };
+		1B108FD61D19581D009A8AB0 /* ScheduleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B108FD51D19581D009A8AB0 /* ScheduleViewCell.swift */; };
+		1B108FD81D19DD5E009A8AB0 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B108FD71D19DD5E009A8AB0 /* Schedule.swift */; };
+		1B108FDA1D19E626009A8AB0 /* AddSchdeuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B108FD91D19E626009A8AB0 /* AddSchdeuleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1B108FCA1D195778009A8AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B108FCD1D195778009A8AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B108FCF1D195778009A8AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B108FD51D19581D009A8AB0 /* ScheduleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewCell.swift; sourceTree = "<group>"; };
+		1B108FD71D19DD5E009A8AB0 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		1B108FD91D19E626009A8AB0 /* AddSchdeuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSchdeuleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		1B108FC21D195778009A8AB0 /* ScheduleViewer */ = {
 			isa = PBXGroup;
 			children = (
+				1B108FD71D19DD5E009A8AB0 /* Schedule.swift */,
 				1B108FC31D195778009A8AB0 /* AppDelegate.swift */,
 				1B108FC51D195778009A8AB0 /* ViewController.swift */,
+				1B108FD91D19E626009A8AB0 /* AddSchdeuleViewController.swift */,
 				1B108FC71D195778009A8AB0 /* Main.storyboard */,
+				1B108FD51D19581D009A8AB0 /* ScheduleViewCell.swift */,
 				1B108FCA1D195778009A8AB0 /* Assets.xcassets */,
 				1B108FCC1D195778009A8AB0 /* LaunchScreen.storyboard */,
 				1B108FCF1D195778009A8AB0 /* Info.plist */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B108FD81D19DD5E009A8AB0 /* Schedule.swift in Sources */,
+				1B108FDA1D19E626009A8AB0 /* AddSchdeuleViewController.swift in Sources */,
 				1B108FC61D195778009A8AB0 /* ViewController.swift in Sources */,
+				1B108FD61D19581D009A8AB0 /* ScheduleViewCell.swift in Sources */,
 				1B108FC41D195778009A8AB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
