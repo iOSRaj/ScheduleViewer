@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cellIdentifier = "ScheduleTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ScheduleViewCell
 
+        schedules.sortInPlace { $0.beginDate!.localizedCaseInsensitiveCompare($1.beginDate!) == NSComparisonResult.OrderedAscending }
         // Fetches the appropriate schedule for the data source layout.
         let schedule = schedules[indexPath.row]
 
@@ -109,6 +110,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             // Save the schdeules.
             saveSchdeules()
+            self.scheduleTableView.reloadData()
         }
     }
 
