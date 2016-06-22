@@ -54,7 +54,7 @@ class AddSchdeuleViewController: UIViewController {
     }
 
     @IBAction func datePickerChanged(sender: AnyObject) {
-        self.beginTaskDate.text = NSDateFormatter.dateFormat().stringFromDate(datePicker.date)
+        self.beginTaskDate.text = "Begin Task : " + NSDateFormatter.dateFormat().stringFromDate(datePicker.date)
         addWeekToDate()
     }
 
