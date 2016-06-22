@@ -53,8 +53,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Fetches the appropriate schedule for the data source layout.
         let schedule = schedules[indexPath.row]
 
-        cell.beginTaskDateTime.text = schedule.beginDate
-        cell.endTaskDateTime.text = schedule.endDate
+        cell.beginTaskDateTime.text = "Begin Task : " + schedule.beginDate!
+        cell.endTaskDateTime.text = "End Task : " + schedule.endDate!
 
         return cell
     }

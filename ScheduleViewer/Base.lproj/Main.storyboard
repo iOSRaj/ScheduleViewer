@@ -31,35 +31,35 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BeginTask" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owc-fL-SQ5">
-                                                    <rect key="frame" x="23" y="14" width="218" height="32"/>
+                                                    <rect key="frame" x="23" y="14" width="411" height="32"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="218" id="UMC-rN-9Wx"/>
-                                                        <constraint firstAttribute="height" constant="32" id="yJS-0s-Xbe"/>
+                                                        <constraint firstAttribute="width" constant="411" id="DoI-Ig-2AX"/>
+                                                        <constraint firstAttribute="height" constant="32" id="EpT-VE-cxw"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EndTask" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH5-BM-aJa">
-                                                    <rect key="frame" x="23" y="54" width="218" height="32"/>
+                                                    <rect key="frame" x="23" y="54" width="411" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="leading" secondItem="XH5-BM-aJa" secondAttribute="leading" id="Bpt-Ua-mvP"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="XH5-BM-aJa" secondAttribute="bottom" constant="12.5" id="JK0-F6-R0A"/>
-                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="trailing" secondItem="XH5-BM-aJa" secondAttribute="trailing" id="MgY-QM-LlB"/>
-                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="leading" secondItem="sFo-bI-zG5" secondAttribute="leadingMargin" constant="15" id="c63-Qt-kPy"/>
-                                                <constraint firstItem="XH5-BM-aJa" firstAttribute="top" secondItem="owc-fL-SQ5" secondAttribute="bottom" constant="8" symbolic="YES" id="cJL-C7-f5n"/>
-                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="top" secondItem="sFo-bI-zG5" secondAttribute="topMargin" constant="6" id="h71-bX-U7l"/>
+                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="top" secondItem="sFo-bI-zG5" secondAttribute="topMargin" constant="6" id="4KS-PY-Yhx"/>
+                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="leading" secondItem="sFo-bI-zG5" secondAttribute="leadingMargin" constant="15" id="Des-Bj-ybW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XH5-BM-aJa" secondAttribute="bottom" constant="12.5" id="gfP-49-X0L"/>
+                                                <constraint firstItem="XH5-BM-aJa" firstAttribute="top" secondItem="owc-fL-SQ5" secondAttribute="bottom" constant="8" symbolic="YES" id="hWD-Az-Gsc"/>
+                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="trailing" secondItem="XH5-BM-aJa" secondAttribute="trailing" id="xie-Jy-jYe"/>
+                                                <constraint firstItem="owc-fL-SQ5" firstAttribute="leading" secondItem="XH5-BM-aJa" secondAttribute="leading" id="yTU-rT-jcx"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="beginTaskDateTime" destination="owc-fL-SQ5" id="jfv-z2-fqe"/>
                                             <outlet property="endTaskDateTime" destination="XH5-BM-aJa" id="Sig-Gr-raU"/>
-                                            <segue destination="rUy-vI-KC6" kind="push" id="6iu-OT-TEl"/>
+                                            <segue destination="rUy-vI-KC6" kind="show" id="6iu-OT-TEl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -71,10 +71,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zy3-VH-o0L" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="OIL-cX-AAr"/>
-                            <constraint firstItem="Zy3-VH-o0L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SMB-rn-68V"/>
-                            <constraint firstAttribute="trailing" secondItem="Zy3-VH-o0L" secondAttribute="trailing" id="hsQ-jV-Qgh"/>
-                            <constraint firstItem="Zy3-VH-o0L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tMx-vW-wHQ"/>
+                            <constraint firstItem="Zy3-VH-o0L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Cz-ae-9In"/>
+                            <constraint firstAttribute="trailing" secondItem="Zy3-VH-o0L" secondAttribute="trailing" id="U5Z-rj-q2b"/>
+                            <constraint firstItem="Zy3-VH-o0L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UfF-xd-WLB"/>
+                            <constraint firstItem="Zy3-VH-o0L" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Zqn-84-Ps2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aN7-bB-S9W">

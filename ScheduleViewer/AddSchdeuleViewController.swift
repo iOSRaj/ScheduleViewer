@@ -26,7 +26,7 @@ class AddSchdeuleViewController: UIViewController {
             self.beginTaskDate.text = schedule.beginDate
             self.endTaskDate.text = schedule.endDate
         } else {
-            self.beginTaskDate.text = NSDateFormatter.dateFormat().stringFromDate(NSDate())
+            self.beginTaskDate.text = "Begin Task : " + NSDateFormatter.dateFormat().stringFromDate(NSDate())
             addWeekToDate()
         }
     }
@@ -60,7 +60,7 @@ class AddSchdeuleViewController: UIViewController {
 
     func addWeekToDate() {
         let addWeekToDate = NSCalendar.currentCalendar().dateByAddingUnit(.WeekOfMonth, value: 1, toDate: datePicker.date, options: [])
-        self.endTaskDate.text = NSDateFormatter.dateFormat().stringFromDate(addWeekToDate!)
+        self.endTaskDate.text = "End Task : " + NSDateFormatter.dateFormat().stringFromDate(addWeekToDate!)
     }
 
 }
