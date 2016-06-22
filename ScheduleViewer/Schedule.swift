@@ -31,13 +31,8 @@ class Schedule: NSObject, NSCoding {
         // Initialize stored properties.
         self.beginDate = beginDate
         self.endDate = endDate
-
+        
         super.init()
-
-        // Initialization should fail if there is no name or if the rating is negative.
-        if endDate.isEmpty {
-            return nil
-        }
     }
 
     // MARK: NSCoding
